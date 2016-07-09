@@ -1,6 +1,18 @@
 # ws [![Travis-CI](https://api.travis-ci.org/ostera/ws.svg)](https://travis-ci.org/ostera/ws)
 > 🔄 An erlang WebSocket server
 
+## Installation
+
+Simply include in your `rebar.config` as:
+
+```erlang
+{deps, [
+  % ...
+  {ws, {git, "https://github.com/ostera/ws", {tag, "0.1.0"}}}
+  % ...
+]}.
+```
+
 ## Tentative Interface
 
 ```erlang
@@ -68,6 +80,18 @@ And if you have to build it, you have to test it, and you have to spend time on 
 
 I don't want to do that over and over again. Hopefully neither do you.
 
+## Contributing
+
+Fork, make a topic branch, and send a Pull Request. Travis will let you know if
+it's good to go, and from the on we can review, retouch, and merge.
+
+Included here is a `Makefile` with handy targets. Run `make` to execute the complete
+battery of tests.
+
 ## Next Steps
 
 See the [issues page](https://github.com/ostera/ws/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement) for a list of planned enhancements and features.
+
+## License
+
+See [LICENSE](https://github.com/ostera/ws/blob/master/LICENSE).
